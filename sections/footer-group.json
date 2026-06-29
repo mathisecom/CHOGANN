@@ -84,7 +84,7 @@
         "heading_tag": "h6",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "",
+        "background": "#FAF7F6",
         "background_gradient": "",
         "text_color": ""
       }
@@ -95,8 +95,8 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image": "shopify://shop_images/Olfazeta_Logo_Black_170_1.png",
-            "image_width": 140,
+            "image": "shopify://shop_images/cropped-Logo-Chogan-2-white-200x67.webp",
+            "image_width": 150,
             "heading_size": "h4",
             "title": "Newsletter",
             "content": ""
