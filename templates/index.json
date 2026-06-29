@@ -76,7 +76,9 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "aloe-vera-jus-et-pulpe-99-9-675-ml"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": true,
