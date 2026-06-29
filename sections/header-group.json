@@ -33,6 +33,7 @@
         "message",
         "message_ggVfHR"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
@@ -50,9 +51,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Olfazeta_Logo_Black_170.svg",
-        "logo_max_width": 120,
-        "logo_mobile_max_width": 95,
+        "logo": "shopify://shop_images/cropped-Logo-Chogan-2-white-200x67.webp",
+        "logo_max_width": 140,
+        "logo_mobile_max_width": 115,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
