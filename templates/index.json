@@ -76,9 +76,7 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [
-          "parfum-chogan-n-60"
-        ],
+        "products": [],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": true,
