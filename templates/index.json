@@ -310,6 +310,23 @@
         "testimonial_card_text_color": ""
       }
     },
+    "scrolling_text_nrhbB7": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "✦ Paiement Sécurisé  ✦   Service Client 7j/7  ✦    Livraison Gratuite dès 50€  ✦    Nouvelle collection disponible  ✦",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "faq_6TcnhT": {
       "type": "faq",
       "blocks": {
@@ -387,6 +404,7 @@
     "logoscroll_darGwi",
     "rich_text_8jQawa",
     "testimonials_6H4tNL",
+    "scrolling_text_nrhbB7",
     "faq_6TcnhT"
   ]
 }
