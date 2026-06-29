@@ -95,7 +95,8 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image_width": 150,
+            "image": "shopify://shop_images/Olfazeta_Logo_Black_170_1.png",
+            "image_width": 140,
             "heading_size": "h4",
             "title": "Newsletter",
             "content": ""
