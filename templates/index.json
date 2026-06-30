@@ -49,6 +49,71 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "barreannonce_BBRfEX": {
+      "type": "barreannonce",
+      "blocks": {
+        "announcement_dHLmAq": {
+          "type": "announcement",
+          "settings": {
+            "text": "Livraison gratuite dès 50€"
+          }
+        },
+        "announcement_nXQqgV": {
+          "type": "announcement",
+          "settings": {
+            "text": "Nouvelle collection disponible"
+          }
+        },
+        "announcement_fQrbtk": {
+          "type": "announcement",
+          "settings": {
+            "text": "Paiement sécurisé"
+          }
+        },
+        "announcement_kUH6Wg": {
+          "type": "announcement",
+          "settings": {
+            "text": "Service client 7j/7"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_dHLmAq",
+        "announcement_nXQqgV",
+        "announcement_fQrbtk",
+        "announcement_kUH6Wg"
+      ],
+      "name": "Barre annonce défilante",
+      "settings": {
+        "full_width": true,
+        "direction": "left",
+        "speed": 24,
+        "pause_on_hover": false,
+        "uppercase": true,
+        "font_weight": "800",
+        "font_size": 13,
+        "mobile_font_size": 11,
+        "letter_spacing": 1,
+        "mobile_letter_spacing": 1,
+        "separator": "+",
+        "separator_size": 14,
+        "mobile_separator_size": 12,
+        "separator_weight": "800",
+        "separator_gap": 24,
+        "mobile_separator_gap": 18,
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "separator_color": "#ffffff",
+        "bar_height": 38,
+        "item_spacing": 34,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_bar_height": 41,
+        "mobile_item_spacing": 24,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
+      }
+    },
     "rich_text_XPPNUc": {
       "type": "rich-text",
       "blocks": {
@@ -179,7 +244,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#FAF7F6",
+        "background": "#faf7f6",
         "background_gradient": "",
         "text_color": ""
       }
@@ -265,7 +330,7 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#FAF7F6",
+        "background": "#faf7f6",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -479,7 +544,7 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "testimonial_card_background": "#FAF7F6",
+        "testimonial_card_background": "#faf7f6",
         "testimonial_card_text_color": ""
       }
     },
@@ -572,6 +637,7 @@
   },
   "order": [
     "slideshow",
+    "barreannonce_BBRfEX",
     "rich_text_XPPNUc",
     "collection_list_TwfRUe",
     "featured_collection_DVUPi6",
