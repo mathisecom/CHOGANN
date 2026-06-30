@@ -197,6 +197,88 @@
         "heading_gradient": ""
       }
     },
+    "section_cocon_parfum_HWVimg": {
+      "type": "section-cocon-parfum",
+      "blocks": {
+        "benefit_KzCNLp": {
+          "type": "benefit",
+          "settings": {
+            "icon": "france",
+            "title": "Fabrication Française",
+            "text": "Tous nos parfums prennent vie en France, avec cœur, passion et conviction."
+          }
+        },
+        "benefit_EpnaCy": {
+          "type": "benefit",
+          "settings": {
+            "icon": "bottle",
+            "title": "Artisanat",
+            "text": "Chaque détail est soigné avec exigence, du geste de création jusqu’au parfum final."
+          }
+        },
+        "benefit_CpFcjc": {
+          "type": "benefit",
+          "settings": {
+            "icon": "hands",
+            "title": "Créations uniques et originales",
+            "text": "Nos senteurs racontent une histoire, une émotion, un souvenir, loin des tendances éphémères."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_KzCNLp",
+        "benefit_EpnaCy",
+        "benefit_CpFcjc"
+      ],
+      "name": "Image + bénéfices cocon",
+      "settings": {
+        "heading": "L'art de parfumer votre Cocon",
+        "description": "<p>Chez <strong>Olfazeta</strong>, nous apportons une touche de bien-être au quotidien. Nos parfums créent une atmosphère agréable, chaleureuse et confortable dans votre intérieur.</p>",
+        "text_width": 620,
+        "image": "shopify://shop_images/Olfazeta_Collection_Millesime_Homme_Man.webp",
+        "image_alt": "Parfum d’intérieur",
+        "image_position": "image-right",
+        "mobile_image_first": true,
+        "image_ratio": "1 / 1",
+        "image_fit": "cover",
+        "image_radius": 14,
+        "mobile_image_radius": 10,
+        "image_bg_color": "#f4f0e8",
+        "bg_color": "#ffffff",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "benefit_title_color": "#000000",
+        "benefit_text_color": "#000000",
+        "icon_color": "#111111",
+        "heading_size": 30,
+        "mobile_heading_size": 22,
+        "heading_weight": "400",
+        "text_size": 15,
+        "mobile_text_size": 14,
+        "benefit_title_size": 15,
+        "mobile_benefit_title_size": 14,
+        "benefit_text_size": 15,
+        "mobile_benefit_text_size": 14,
+        "max_width": 1320,
+        "side_padding": 40,
+        "mobile_side_padding": 15,
+        "desktop_gap": 80,
+        "mobile_gap": 32,
+        "title_margin_bottom": 22,
+        "benefits_spacing": 34,
+        "benefit_gap": 26,
+        "icon_text_gap": 20,
+        "mobile_icon_text_gap": 16,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 16,
+        "icon_box_size": 42,
+        "mobile_icon_box_size": 38,
+        "icon_size": 38,
+        "mobile_icon_size": 34
+      }
+    },
     "featured_collection_DVUPi6": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -643,6 +725,7 @@
     "featured_collection_DVUPi6",
     "rich_text_aWmk6V",
     "collection_list_9ddNx6",
+    "section_cocon_parfum_HWVimg",
     "featured_collection_RrXirz",
     "logoscroll_darGwi",
     "rich_text_8jQawa",
