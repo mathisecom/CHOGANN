@@ -191,10 +191,26 @@
           "type": "collection",
           "settings": {
             "collection": "creme-corps",
+            "image": "shopify://shop_images/1712067996_documents.pdf_1__After_After.webp",
             "subheading": "",
             "title": "",
             "url": "",
             "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_zMtA98": {
+          "type": "collection",
+          "settings": {
+            "collection": "parfum-luxury",
+            "image": "shopify://shop_images/Luxury_Collection_Olfazeta_After.webp",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -219,6 +235,7 @@
           "type": "collection",
           "settings": {
             "collection": "gels-douche",
+            "image": "shopify://shop_images/Gel_douche_Hover_After.webp",
             "subheading": "",
             "title": "",
             "url": "",
@@ -246,6 +263,7 @@
       },
       "block_order": [
         "collection_cPQQqQ",
+        "collection_zMtA98",
         "collection_QN4Q4w",
         "collection_E6Ggnb",
         "collection_8qtbiD"
