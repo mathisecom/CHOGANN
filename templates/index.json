@@ -195,7 +195,7 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -210,21 +210,7 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h3",
-            "text_position": "place-self-end text-end",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_QN4Q4w": {
-          "type": "collection",
-          "settings": {
-            "collection": "diffuseur",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -239,7 +225,7 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -253,7 +239,7 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -264,7 +250,6 @@
       "block_order": [
         "collection_zMtA98",
         "collection_cPQQqQ",
-        "collection_QN4Q4w",
         "collection_E6Ggnb",
         "collection_8qtbiD"
       ],
