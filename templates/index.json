@@ -49,13 +49,39 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "rich_text_XPPNUc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_R6Tyti": {
+          "type": "heading",
+          "settings": {
+            "text": "Nos Parfums",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_R6Tyti"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "collection_list_TwfRUe": {
       "type": "collection-list",
       "blocks": {
         "collection_ceEiX7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "parfum-homme",
             "image": "shopify://shop_images/mencollection.webp",
             "subheading": "",
             "title": "Homme",
@@ -70,7 +96,8 @@
         "collection_jTQjFe": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "parfum-femme",
+            "image": "shopify://shop_images/womencollection.webp",
             "subheading": "",
             "title": "Femme",
             "url": "",
@@ -94,10 +121,10 @@
         "collections_per_row": 2,
         "show_progress_bar": false,
         "subheading": "",
-        "title": "Collection list",
+        "title": "",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -542,6 +569,7 @@
   },
   "order": [
     "slideshow",
+    "rich_text_XPPNUc",
     "collection_list_TwfRUe",
     "featured_collection_DVUPi6",
     "rich_text_aWmk6V",
