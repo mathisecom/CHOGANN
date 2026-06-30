@@ -75,6 +75,32 @@
         "product_card_text_color": ""
       }
     },
+    "rich_text_aWmk6V": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cwXCCD": {
+          "type": "heading",
+          "settings": {
+            "text": "Nos Collections",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_cwXCCD"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#FAF7F6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "collection_list_9ddNx6": {
       "type": "collection-list",
       "blocks": {
@@ -461,6 +487,7 @@
   "order": [
     "slideshow",
     "featured_collection_DVUPi6",
+    "rich_text_aWmk6V",
     "collection_list_9ddNx6",
     "featured_collection_RrXirz",
     "logoscroll_darGwi",
