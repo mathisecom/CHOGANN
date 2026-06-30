@@ -297,27 +297,12 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
-        },
-        "collection_8qtbiD": {
-          "type": "collection",
-          "settings": {
-            "collection": "soins-aurodhea",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-end text-end",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
         "collection_zMtA98",
         "collection_cPQQqQ",
-        "collection_E6Ggnb",
-        "collection_8qtbiD"
+        "collection_E6Ggnb"
       ],
       "name": "Collection list",
       "settings": {
