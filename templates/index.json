@@ -187,21 +187,6 @@
     "collection_list_9ddNx6": {
       "type": "collection-list",
       "blocks": {
-        "collection_cPQQqQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "creme-corps",
-            "image": "shopify://shop_images/1712067996_documents.pdf_1__After_After.webp",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_zMtA98": {
           "type": "collection",
           "settings": {
@@ -210,8 +195,23 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end text-end",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_cPQQqQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "creme-corps",
+            "image": "shopify://shop_images/1712067996_documents.pdf_1__After_After.webp",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -224,8 +224,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -239,8 +239,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -253,8 +253,8 @@
             "subheading": "",
             "title": "",
             "url": "",
-            "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
+            "heading_tag": "h3",
+            "text_position": "place-self-end text-end",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -262,8 +262,8 @@
         }
       },
       "block_order": [
-        "collection_cPQQqQ",
         "collection_zMtA98",
+        "collection_cPQQqQ",
         "collection_QN4Q4w",
         "collection_E6Ggnb",
         "collection_8qtbiD"
