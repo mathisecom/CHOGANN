@@ -1,0 +1,537 @@
+{% style %}
+  #shopify-section-{{ section.id }} .fp-announcement-section {
+    width: 100%;
+    background: {{ section.settings.background_color }};
+    overflow: hidden;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  {% if section.settings.full_width %}
+    #shopify-section-{{ section.id }} .fp-announcement-section {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .fp-announcement-bar {
+    position: relative;
+    width: 100%;
+    min-height: {{ section.settings.bar_height }}px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: {{ section.settings.background_color }};
+  }
+
+  #shopify-section-{{ section.id }} .fp-announcement-track {
+    display: flex;
+    width: max-content;
+    animation: fp-marquee-{{ section.id }} {{ section.settings.speed }}s linear infinite;
+    will-change: transform;
+  }
+
+  {% if section.settings.pause_on_hover %}
+    #shopify-section-{{ section.id }} .fp-announcement-bar:hover .fp-announcement-track {
+      animation-play-state: paused;
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .fp-announcement-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  #shopify-section-{{ section.id }} .fp-announcement-item {
+    display: flex;
+    align-items: center;
+    gap: {{ section.settings.separator_gap }}px;
+    padding: 0 {{ section.settings.item_spacing }}px;
+    white-space: nowrap;
+    color: {{ section.settings.text_color }};
+    font-size: {{ section.settings.font_size }}px;
+    font-weight: {{ section.settings.font_weight }};
+    letter-spacing: {{ section.settings.letter_spacing }}px;
+    text-transform: {% if section.settings.uppercase %}uppercase{% else %}none{% endif %};
+    line-height: 1;
+    font-family: inherit;
+  }
+
+  #shopify-section-{{ section.id }} .fp-announcement-text {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .fp-announcement-separator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ section.settings.separator_color }};
+    font-size: {{ section.settings.separator_size }}px;
+    font-weight: {{ section.settings.separator_weight }};
+    line-height: 1;
+  }
+
+  @keyframes fp-marquee-{{ section.id }} {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  {% if section.settings.direction == 'right' %}
+    #shopify-section-{{ section.id }} .fp-announcement-track {
+      animation-direction: reverse;
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .fp-announcement-section {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    #shopify-section-{{ section.id }} .fp-announcement-bar {
+      min-height: {{ section.settings.mobile_bar_height }}px;
+    }
+
+    #shopify-section-{{ section.id }} .fp-announcement-item {
+      font-size: {{ section.settings.mobile_font_size }}px;
+      padding: 0 {{ section.settings.mobile_item_spacing }}px;
+      letter-spacing: {{ section.settings.mobile_letter_spacing }}px;
+      gap: {{ section.settings.mobile_separator_gap }}px;
+    }
+
+    #shopify-section-{{ section.id }} .fp-announcement-separator {
+      font-size: {{ section.settings.mobile_separator_size }}px;
+    }
+  }
+{% endstyle %}
+
+<section class="fp-announcement-section">
+  <div class="fp-announcement-bar">
+    <div class="fp-announcement-track">
+
+      <div class="fp-announcement-group">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            <div class="fp-announcement-item" {{ block.shopify_attributes }}>
+              <span class="fp-announcement-text">
+                {{ block.settings.text }}
+              </span>
+
+              {% if section.settings.separator != blank %}
+                <span class="fp-announcement-separator">
+                  {{ section.settings.separator }}
+                </span>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Livraison gratuite dès 50€</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Nouvelle collection disponible</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Paiement sécurisé</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Service client 7j/7</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="fp-announcement-group" aria-hidden="true">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            <div class="fp-announcement-item">
+              <span class="fp-announcement-text">
+                {{ block.settings.text }}
+              </span>
+
+              {% if section.settings.separator != blank %}
+                <span class="fp-announcement-separator">
+                  {{ section.settings.separator }}
+                </span>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Livraison gratuite dès 50€</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Nouvelle collection disponible</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Paiement sécurisé</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+
+          <div class="fp-announcement-item">
+            <span class="fp-announcement-text">Service client 7j/7</span>
+            <span class="fp-announcement-separator">{{ section.settings.separator }}</span>
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barre annonce défilante",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Général"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Forcer la pleine largeur",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Sens du défilement",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Vers la gauche"
+        },
+        {
+          "value": "right",
+          "label": "Vers la droite"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Vitesse du défilement",
+      "min": 8,
+      "max": 80,
+      "step": 1,
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause au survol",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Texte"
+    },
+    {
+      "type": "checkbox",
+      "id": "uppercase",
+      "label": "Texte en majuscules",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Épaisseur du texte",
+      "default": "800",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "800",
+          "label": "Extra-bold"
+        },
+        {
+          "value": "900",
+          "label": "Black"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Taille texte ordinateur",
+      "min": 8,
+      "max": 28,
+      "step": 1,
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "label": "Taille texte mobile",
+      "min": 8,
+      "max": 22,
+      "step": 1,
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "label": "Espacement lettres ordinateur",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "mobile_letter_spacing",
+      "label": "Espacement lettres mobile",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Séparateur"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Séparateur",
+      "default": "+"
+    },
+    {
+      "type": "range",
+      "id": "separator_size",
+      "label": "Taille séparateur ordinateur",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_separator_size",
+      "label": "Taille séparateur mobile",
+      "min": 8,
+      "max": 24,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "separator_weight",
+      "label": "Épaisseur séparateur",
+      "default": "800",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "800",
+          "label": "Bold"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "separator_gap",
+      "label": "Espace texte / séparateur ordinateur",
+      "min": 4,
+      "max": 40,
+      "step": 1,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_separator_gap",
+      "label": "Espace texte / séparateur mobile",
+      "min": 4,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur du fond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Couleur du séparateur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Dimensions ordinateur"
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "label": "Hauteur de la barre",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 38
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "label": "Espacement entre les annonces",
+      "min": 10,
+      "max": 120,
+      "step": 2,
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding haut",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bas",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Dimensions mobile"
+    },
+    {
+      "type": "range",
+      "id": "mobile_bar_height",
+      "label": "Hauteur de la barre mobile",
+      "min": 20,
+      "max": 70,
+      "step": 1,
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "mobile_item_spacing",
+      "label": "Espacement annonces mobile",
+      "min": 8,
+      "max": 80,
+      "step": 1,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding haut mobile",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bas mobile",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Annonce",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte",
+          "default": "Livraison gratuite dès 50€"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barre annonce défilante",
+      "blocks": [
+        {
+          "type": "announcement",
+          "settings": {
+            "text": "Livraison gratuite dès 50€"
+          }
+        },
+        {
+          "type": "announcement",
+          "settings": {
+            "text": "Nouvelle collection disponible"
+          }
+        },
+        {
+          "type": "announcement",
+          "settings": {
+            "text": "Paiement sécurisé"
+          }
+        },
+        {
+          "type": "announcement",
+          "settings": {
+            "text": "Service client 7j/7"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
