@@ -321,12 +321,36 @@
         "testimonial_card_background": "#faf7f6",
         "testimonial_card_text_color": ""
       }
+    },
+    "related_products_KX8jb7": {
+      "type": "related-products",
+      "name": "Related products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Vous Aimerez Aussi",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "rich_text_YMfqfd",
     "logoscroll_RCwYFy",
-    "testimonials_kV9UjE"
+    "testimonials_kV9UjE",
+    "related_products_KX8jb7"
   ]
 }
