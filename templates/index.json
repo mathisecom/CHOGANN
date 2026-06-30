@@ -49,6 +49,62 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "collection_list_TwfRUe": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_ceEiX7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/mencollection.webp",
+            "subheading": "",
+            "title": "Homme",
+            "url": "shopify://collections/parfum-homme",
+            "heading_tag": "h5",
+            "text_position": "place-self-end text-end",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_jTQjFe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "Femme",
+            "url": "",
+            "heading_tag": "h5",
+            "text_position": "place-self-end text-end",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_ceEiX7",
+        "collection_jTQjFe"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row": 2,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Collection list",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "featured_collection_DVUPi6": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -486,6 +542,7 @@
   },
   "order": [
     "slideshow",
+    "collection_list_TwfRUe",
     "featured_collection_DVUPi6",
     "rich_text_aWmk6V",
     "collection_list_9ddNx6",
