@@ -84,7 +84,7 @@
         "heading_tag": "h6",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "#FAF7F6",
+        "background": "#faf7f6",
         "background_gradient": "",
         "text_color": ""
       }
@@ -114,7 +114,7 @@
           "type": "text",
           "settings": {
             "title": "Contactez-Nous",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "content": "<p>contact@chogan-fragrance.com</p>",
             "enable_follow_on_shop": true
           }
         }
